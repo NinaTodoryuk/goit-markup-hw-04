@@ -1,0 +1,469 @@
+:root {
+  --primary-text-color: #434455;
+  --primary-site-color: white;
+  --button-active-color: #4d5ae5;
+  --button-active-text: white;
+  --button-secondary-color: #e7e9fc;
+  --logo-part-first: #4d5ae5;
+  --logo-part-second: #2e2f42;
+  --item-menu: #2e2f42;
+  --color-focus: #404bbf;
+  --color-hover: #404bbf;
+  --secondary-site-color: #2e2f42;
+  --secondary-text-color: white;
+  --color-title-secondary: #2e2f42;
+  --background-team: #f4f4fd;
+  --color-footet-text: #f4f4fd;
+  --filter-portfolio: #f4f4fd;
+
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--primary-site-color);
+  color: var(--primary-text-color);
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.header-border {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--logo-part-first);
+}
+
+.logo {
+  margin-right: 76px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.logo-studio {
+  color: var(--logo-part-second);
+}
+
+.logo:focus {
+  color: var(--color-focus);
+}
+
+/*site nav*/
+.site-nav {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.menu-nav {
+  display: flex;
+  align-items: center;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* Олдскул способ для отступов. Репета 3/6 урок, 20 мин
+.site-nav .item + .item{
+  margin-right: 40px;
+}
+
+ссылки строчный элемент - не действует вертиклаьная геометрия
+сслыку нужно сделать блочным ээлем/строчно-блочным элем 
+(сслыку лучше блочным, иначе будет зазор 4px справа) - .display: block;*/
+
+.menu-color {
+  color: var(--item-menu);
+  padding: 24px 0;
+}
+
+.menu-color:hover,
+.menu-color:focus,
+.auth-nav:hover,
+.auth-nav:focus {
+  color: var(--color-focus);
+}
+
+.auth-nav {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.address {
+  margin-left: auto;
+}
+
+/*Hero title*/
+.main-color {
+  background-color: var(--secondary-site-color);
+}
+
+.hero-padd{
+  padding: 188px 0;
+}
+
+.hero-title /*H1*/ {
+  font-weight: 700px;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;  
+  align-items: center;
+}
+
+/*button Order service*/
+.button {
+  color: var(--secondary-text-color);
+  background-color: var(--button-active-color);
+  font-size: 16px;
+  font-weight: 500;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  padding: 16px 32px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--color-hover);
+  border: 1px solid transparent;
+}
+
+/*positive quality*/
+/*Section H2*/
+.section-title /*H2*/ {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color-title-secondary);
+}
+
+.positive-quality /*H3*/ {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-title-secondary);
+  margin-bottom: 8px;
+}
+
+.sub-title /*параграфы с текстом*/ {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.border-quality {
+  padding: 120px 0;
+}
+
+.border-item {
+  gap: 24px;
+}
+
+.path-quality {
+  flex-basis: calc((100%-72px) / 4);
+}
+
+/*what are we doing*/
+
+.doing-up {
+  margin-bottom: 72px;
+}
+
+.border-quality {
+  padding-bottom: 120px;
+}
+
+.what {
+}
+
+/*team*/
+/*.card-worker:not(:nth-child(4n)){
+margin-right: 24px;
+}
+
+.card-worker:not(:nth-last-child(-n+4)){
+  margin-bottom: 24px;
+  } 100% спосіб*/
+
+/*сучасний спосіб*/
+
+.team-color {
+  background-color: var(--background-team);
+  }
+
+.team-border {
+  padding: 120px 0;
+  
+}
+
+.card-worker {
+  background-color: var(--primary-site-color);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card-worker {
+  flex-basis: calc(100%-72px / 4);
+}
+
+.title-worker {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-title-secondary);
+  display: inline-block; /*?*/
+  margin-bottom: 8px;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.job-title {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+}
+
+/*footer
+.footer-border {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}*/
+
+.footer-color {
+  background-color: var(--secondary-site-color);
+}
+
+.footer-padd{
+  padding: 100px 0;
+}
+
+.footer-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--color-footet-text);
+}
+
+.logo-ident {
+  margin-bottom: 16px;
+  display: inline-block; /*???*/
+  margin-left: 156px;
+}
+
+.box {
+  width: 264px;
+  height: 72px;
+  margin-left: 156px;
+}
+
+.logo-down {
+  color: var(--color-footet-text);
+}
+
+/*page Portfolio*/
+
+.filter-btn {
+  /*оформление кнопок*/
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  align-items: center;
+  text-align: center;
+  color: var(--button-active-color);
+  background-color: #f4f4fd;
+  cursor: pointer;
+
+  padding: 12px 24px;
+  border: 1px;
+  border-radius: 4px;
+  
+  border: 1px solid #e7e9fc;
+}
+
+.app-filter {
+  /*разметка секции кнопок*/
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+  display: flex;
+}
+
+/*.button:hover,
+.button:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--color-hover);
+}*/
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--color-hover);
+  border: 1px solid transparent;
+  }
+
+ /*.filter-btn:hover,
+.filter-btn:focus{
+  border: 1px solid transparent;
+  border: 1px solid  #e7e9fc;
+}*/
+
+.filter-name {
+  /*H3*/
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--color-title-secondary);
+  margin-bottom: 8px;
+}
+
+.app-border {
+  /*границі контейнера*/
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.prtf-markup {
+  /*разметка картинок*/
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+/*на li!*/
+.app-element {
+  width: calc((100% - 48px) / 3);
+}
+
+/*
+.app-element:not(:nth-child(3n)){
+  column-gap: 24px;
+}
+
+.app-element:not(:nth-last-child(-n=3)){
+  row-gap: 48px;
+}
+
+.app-element:nth-child(3n)){
+  margin-right: 0;
+}
+
+.item-app {
+  row-gap: 48px;
+  column-gap: 24px;
+}*/
+
+.app-card {
+  /*нижняя граница*/
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
+}
+
+.paragraph-style {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
