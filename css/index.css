@@ -15,6 +15,7 @@
   --background-team: #f4f4fd;
   --color-footet-text: #f4f4fd;
   --filter-portfolio: #f4f4fd;
+  --color-logo: #8E8F99;
 
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
@@ -165,8 +166,10 @@ body {
 /*Hero title*/
 .hero-padd {
   padding: 188px 0;
- background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
     url(../images/people-office.jpg);
   background-color: var(--secondary-site-color);
   background-size: cover;
@@ -250,6 +253,8 @@ body {
 }
 
 .border-item {
+  display: flex;
+  align-items: center;
   gap: 24px;
 }
 
@@ -346,6 +351,7 @@ margin-right: 24px;
 
   width: 40px;
   height: 40px;
+  color: var(--background-team);
 }
 
 .socials-link {
@@ -369,7 +375,7 @@ margin-right: 24px;
   height: 88px;
   left: 0;
   top: 0;
-  background-color: #f4f4fd;
+
   border: 1px solid #8e8f99;
   border-radius: 4px;
   display: flex;
@@ -377,8 +383,15 @@ margin-right: 24px;
   justify-content: center;
 }
 
+#8E8F99
+
 .cust-border {
   padding-top: 120px;
+}
+
+.cust-box {
+  width: 1128px;
+  height: 88px;
 }
 
 .cust-menu {
@@ -399,15 +412,13 @@ margin-right: 24px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--color-footet-text);
+
+  width: 264px;
 }
 
 .logo-ident {
   margin-bottom: 16px;
-  display: inline-block; /*???*/
-}
-
-.box {
-  width: 264px;
+  display: inline-block; 
 }
 
 .logo-down {
@@ -415,17 +426,21 @@ margin-right: 24px;
 }
 
 /*Social media*/
-
 .social-media {
-  width: 96px;
+  width: 196px;
   height: 24px;
   left: 540px;
   top: 2988px;
+  margin-left: 120px;
+}
 
+.social-title{
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: white;
+  margin-bottom: 16px;
+  
 }
 
 .media {
