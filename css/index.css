@@ -364,7 +364,7 @@ margin-right: 24px;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  fill: var(--button-active-color);
+  fill-rule: var(--button-active-color);
 }
 
 .socials-icon {
