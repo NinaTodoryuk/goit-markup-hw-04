@@ -15,7 +15,7 @@
   --background-team: #f4f4fd;
   --color-footet-text: #f4f4fd;
   --filter-portfolio: #f4f4fd;
-  --color-logo: #8E8F99;
+  --color-logo: #8e8f99;
 
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
@@ -307,9 +307,8 @@ margin-right: 24px;
 .card-worker {
   background-color: var(--primary-site-color);
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-  0px 1px 1px rgba(46, 47, 66, 0.16),
-   0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card-worker {
@@ -420,7 +419,7 @@ margin-right: 24px;
 
 .logo-ident {
   margin-bottom: 16px;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .logo-down {
@@ -434,16 +433,14 @@ margin-right: 24px;
   left: 540px;
   top: 2988px;
   margin-left: 120px;
-
 }
 
-.social-title{
+.social-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: white;
   margin-bottom: 16px;
-  
 }
 
 .media {
@@ -555,10 +552,9 @@ margin-right: 24px;
 }
 
 .app-card:hover,
-.app-card:focus{
+.app-card:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-   0px 1px 1px rgba(46, 47, 66, 0.16), 
-   0px 2px 1px rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .paragraph-style {
