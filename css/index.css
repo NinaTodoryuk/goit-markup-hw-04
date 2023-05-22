@@ -345,11 +345,11 @@ margin-right: 24px;
   text-align: center;
 }
 
-.socials {
+.socials-ftr {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
 }
 
 .socials-item {
@@ -395,6 +395,7 @@ margin-right: 24px;
   align-items: center;
   justify-content: center;
   fill: var(--color-logo);
+  
 }
 
 .button-cust:hover,
@@ -480,7 +481,7 @@ margin-right: 24px;
 
 .media {
   display: flex;
-  align-items: baseline;/*?*/
+  align-items: baseline;
   gap: 120px;
 }
 
