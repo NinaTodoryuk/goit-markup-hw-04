@@ -116,11 +116,6 @@ body {
   color: var(--primary-text-color);
 }
 
-.nav-item {
-  display: flex;
-  align-items: center;
-}
-
 .menu-nav {
   display: flex;
   align-items: center;
@@ -130,6 +125,11 @@ body {
   display: flex;
   align-items: center;
   margin-left: 76px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
 }
 
 .nav-item:not(:last-child) {
@@ -191,7 +191,7 @@ body {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: red;
+  color: var(--secondary-text-color);
   max-width: 496px;
   margin-left: auto;
   margin-right: auto;
@@ -350,7 +350,7 @@ margin-right: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  
 }
 
 .socials-item {
@@ -376,10 +376,11 @@ margin-right: 24px;
 
 .socials-link:hover,
 .socials-link:focus{
-  background-color: var(--color-focus: #404bbf);
+  background-color: var(--color-hover: #404bbf);
 }
 
 .socials-icon {
+  fill: var(--color-footet-text)
 }
 
 /*Customers*/
@@ -445,34 +446,42 @@ margin-right: 24px;
 }
 
 /*Social media*/
-.social-media {
-  width: 290px;
-  height: 24px;
-  left: 540px;
-  top: 2988px;
-  
-}
-
 .social-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: white;
-  margin-bottom: 16px;
+  margin-bottom: 16px;  
+}
+
+
+.socials-link-ftr {
+  background-color: var(--button-active-color);
+  /*fill: var(--background-team);*/
+  width: 100%;
+  height: 100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.social-ftr{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 120px;
+  }
+
+.footer-soc{
+  display: flex;
   gap: 16px;
 }
 
-.socials-link-ftr {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: var(--button-active-color);
-  fill: var(--background-team);
+.soc-box{
+  width: 40px;
+  height: 40px;
 }
 
 .socials-link-ftr:hover,
@@ -483,7 +492,7 @@ margin-right: 24px;
 .media {
   display: flex;
   align-items: baseline;
-  gap: 120px;
+  
 }
 
 /*page Portfolio*/
