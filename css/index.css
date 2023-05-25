@@ -339,21 +339,21 @@ margin-right: 24px;
 .job-title {
   padding-top: 32px;
   padding-bottom: 32px;
-  /*padding-left: 16px;
-  padding-right: 16px;*/
+ padding-left: 16px;
+  padding-right: 16px;
   text-align: center;
 }
 
 .socials-team {
   display: flex;
   align-items: center;
-
+gap: 24px;
 }
 
 .socials-item {
-  display: flex;
+  /*display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
 
   width: 40px;
   height: 40px;
@@ -389,8 +389,18 @@ margin-right: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: var(--color-logo);
+  color: var(--color-logo);
 }
+
+.cust-title /*H2*/ {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color-title-secondary);
+}
+
 
 .button-cust:hover,
 .button-cust:focus {
@@ -582,6 +592,7 @@ width: 1140px;
   column-gap: 24px;
 }*/
 
+
 .app-card {
   /*нижняя граница*/
   border: 1px solid #e7e9fc;
@@ -590,11 +601,21 @@ width: 1140px;
 }
 
 .app-card:hover,
-.app-card:focus
-/*.app-shadow:hover,
-.app-shadow:focus*/ {
+.app-card:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.app-shadow{
+  display: block;
+}
+
+.app-shadow:hover,
+.app-shadow:focus{
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16), 
+  0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 
 .paragraph-style {
