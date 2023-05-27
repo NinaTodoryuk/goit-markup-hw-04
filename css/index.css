@@ -17,6 +17,7 @@
   --filter-portfolio: #f4f4fd;
   --color-logo: #8e8f99;
   --color-hover-social: #31d0aa;
+  --modal-window: #fcfcfc;
 
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
@@ -80,11 +81,15 @@ body {
 }
 
 .header-border {
+  width: 100%;
   border-bottom: 1px solid #e7e9fc;
-
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
+/*position: absolute;
+  width: 100%; щоб фон закривав хедер (навігацію)
+  position: fixed; - фон скролився зі сторінкою*/
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -105,7 +110,8 @@ body {
   color: var(--color-focus);
 }
 
-/*site nav*/
+/*site nav */
+
 .site-nav {
   font-weight: 500;
   font-size: 16px;
@@ -146,6 +152,7 @@ body {
 .menu-color {
   color: var(--item-menu);
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-color:hover,
@@ -161,6 +168,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address {
@@ -250,7 +258,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .padd-quality {
@@ -353,11 +361,7 @@ margin-right: 24px;
 }
 
 .socials-item {
-  /*display: flex;
-  justify-content: center;
-  align-items: center;*/
-
-  width: 40px;
+   width: 40px;
   height: 40px;
 }
 
@@ -623,14 +627,16 @@ margin-right: 24px;
   color: var(--primary-text-color);
 }
 
-.olerlay {
+.overlay {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 300px;
-  overflow: auto;
+  overflow-y: scroll;
   transform: translate(0, 100%);
+  transition: transform 500ms linear;
+
   font-size: 16px;
   color: var(--color-footet-text);
   padding-top: 40px;
@@ -641,9 +647,85 @@ margin-right: 24px;
 }
 
 .app-shadow {
-  position: relative;
+  display: block;
 }
 
 .over-item {
   position: relative;
+  overflow: hidden;
+}
+
+.app-shadow:hover .overlay,
+.app-shadow:focus .overlay {
+  transform: translate(0, 0);
+}
+
+/*modal window*/
+.backdrop {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  transition: opacity var(--transition-dur-and-func);
+  visibility: var(--transition-dur-and-func);
+}
+
+.backdrop.is-hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ width: 408px;
+height: 584px;
+background-color: var(--modal-window);
+}
+
+.modal-button{
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #E7E9FC;
+border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: border-color var (--transition-dur-and-func);
+}/*хрест змінює колір трошки пізніше. 
+прописуємо на єлем у якого щост зміюється */
+
+.modal-button:hover,
+.modal-button:focus{
+  background-color: var(--color-focus);
+}
+
+.modal-close-icon{
+  transition: fill var(--button-active-text);
+}
+
+.modal-button:hover .modal-close-icon,
+.modal-button:focus .modal-close-icon{
+  background-color: var(--color-focus);
+  fill: var(--button-active-text);
+}
+
+.modal-close-icon{  
+  width: 16px;
+  height: 16px;  
+  border-radius: 50%;
+  background-color: var(--button-secondary-color); 
+
 }
