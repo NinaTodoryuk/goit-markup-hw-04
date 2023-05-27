@@ -276,12 +276,9 @@ body {
 }
 
 .button-qual {
-  cursor: pointer;
-  width: 264px;
+   width: 264px;
   height: 112px;
-  left: 0;
-  top: 0;
-  background-color: #f4f4fd;
+   background-color: #f4f4fd;
   border-radius: 4px;
   display: flex;
   align-items: center;
